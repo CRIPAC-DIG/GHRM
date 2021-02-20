@@ -22,7 +22,7 @@ def pad_sequences(items, maxlen, value=data_generator.n_words):
     return result
 
 def words_lookup(docs):
-    if args.model == 'GRMM':
+    if args.model == 'GHRM':
         return [data_generator.doc_unqiue_word_list[i] for i in docs]
     else:
         return [data_generator.doc_word_list[i] for i in docs]
